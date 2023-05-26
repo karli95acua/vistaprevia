@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoLab</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+    <!-- top navigation/Funcionalidades incorporadas -->
+    <div class="top">
+        <div class="nav-container">
+            <h1>VideoLab</h1>
+            <input type="text" placeholder="Buscar" name="query" class="search">
+            <button class="btn" onclick="cambiarEstado(this)">Iniciar sesión</button>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="flex-container">
+
+        <!-- left column -->
+        <div class="col-l">
+
+            <!-- this is a placeholder replace it with a real video / Realizado -->
+            <figure class="placeholder">
+                <video src="./assets/pexels-levi-wedge-13308133-1920x1080-50fps.mp4" controls class="video" muted
+                onmouseover="playVideo(this)" onmouseout="pauseVideo(this)"></video>
+            </figure>
+
+            <!-- video info / Realizado -->
+            <div class="row">
+                <div class="start">
+                    <h1>Mi primera vez en Asia!</h1>
+                    <h3>1.3M Vistas | Junio, 18, 2023</h3>
+                    <div class="user">
+                        <img src="./assets/pony.jpg" alt="user-circle" class="avatar-s">
+                        <span class="user-name">Mis viajes por el mundo vlog</span>
+                    </div>
+                </div>
+                <button class="btn" onclick="cambiarSus(this)">Suscríbete</button> <!--También está permitido por la RAE este término-->
+            </div>
+
+        </div>
+
+        <!-- right column /Realizado -->
+        <div class="col-r">
+
+            <h3 class="sub-header">A continuación...</h3>
+
+            <div class="video-small">
+                <video src="./assets/pexels-dey-kheireddine-5363966-3840x2160-30fps.mp4" alt="video placeholder" controls class="vids1" muted
+                onmouseover="playVids(this)" onmouseout="pauseVids(this)"></video>
+                <span class="video-title">Olas de atardecer</span>
+            </div>
+
+            <div class="video-small">
+                <video src="./assets/pexels-gram-film-3045714-1920x1080-25fps.mp4" alt="video placeholder" controls class="vids2" muted
+                onmouseover="playVids(this)" onmouseout="pauseVids(this)"></video>
+                <span class="video-title">Conociendo cachorros en el parque</span>
+            </div>
+
+            <div class="video-small">
+                <video src="./assets/pexels-george-morina-5688492-1920x1080-30fps.mp4" alt="video placeholder" controls class="vids3" muted
+                onmouseover="playVids(this)" onmouseout="pauseVids(this)"></video>
+                <span class="video-title">Lluvioso Londres</span>
+            </div>
+
+            <div class="video-small">
+                <video src="./assets/pexels-alan-ford-8050129-3840x2160-24fps.mp4" alt="video placeholder" controls class="vids4" muted
+                onmouseover="playVids(this)" onmouseout="pauseVids(this)"></video>
+                <span class="video-title">Conociendo las cascadas</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
